@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GMGN Top30 Flow",
+  "version": "0.1.0",
+  "description": "Compare buy/sell flow of top 30 addresses for a GMGN token.",
+  "content_scripts": [
+    {
+      "matches": ["https://gmgn.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [],
+  "host_permissions": ["https://gmgn.ai/*"]
+}
