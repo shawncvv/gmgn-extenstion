@@ -1,0 +1,135 @@
+.gmgn-panel {
+  position: fixed;
+  width: 320px;
+  background: #0b1017;
+  color: #f4f7fb;
+  font-family: "Inter", system-ui, sans-serif;
+  border: 1px solid #1f2a3a;
+  border-radius: 12px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+  z-index: 99999;
+}
+
+.gmgn-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #1f2a3a;
+  cursor: grab;
+}
+
+.gmgn-panel__header p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #9cb2c7;
+}
+
+.gmgn-panel__status {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #1a2332;
+}
+
+.gmgn-panel__status--loading {
+  background: #1b2f4b;
+  color: #9dd1ff;
+}
+
+.gmgn-panel__status--error {
+  background: #4b1b1b;
+  color: #ff9d9d;
+}
+
+.gmgn-panel__body {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.gmgn-panel__label {
+  font-size: 12px;
+  color: #9cb2c7;
+}
+
+.gmgn-panel__controls {
+  display: flex;
+  gap: 8px;
+}
+
+.gmgn-panel__input {
+  flex: 1;
+  background: #111826;
+  color: #f4f7fb;
+  border: 1px solid #1f2a3a;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.gmgn-panel__input::placeholder {
+  color: #5d6b7c;
+}
+
+.gmgn-panel__button {
+  background: #2d78f5;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gmgn-panel__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.gmgn-panel__error {
+  color: #ff9d9d;
+  font-size: 12px;
+}
+
+.gmgn-panel__summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  font-size: 12px;
+}
+
+.gmgn-panel__summary strong {
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.gmgn-panel__net--positive strong {
+  color: #6be28b;
+}
+
+.gmgn-panel__net--negative strong {
+  color: #ff9d9d;
+}
+
+.gmgn-panel__rows {
+  display: grid;
+  gap: 6px;
+  max-height: 220px;
+  overflow: auto;
+  font-size: 11px;
+}
+
+.gmgn-panel__row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.gmgn-panel__empty {
+  font-size: 12px;
+  color: #9cb2c7;
+}
