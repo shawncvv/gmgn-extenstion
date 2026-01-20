@@ -1,1 +1,1 @@
-# gmgn-bot
+# gmgn-extenstion
